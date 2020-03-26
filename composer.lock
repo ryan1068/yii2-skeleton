@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d469b59c64174ed5af5bb31bbf069d8",
+    "content-hash": "5742bb1e893989b6b7550271fc7e1a80",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -302,16 +302,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "dev-master",
+            "version": "2.0.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "22c0da4fe474b2bb7c0bdfc934c3c5b2edf19bf3"
+                "reference": "8c0a329b72b11d938e1cb7e4cabf700139206723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/22c0da4fe474b2bb7c0bdfc934c3c5b2edf19bf3",
-                "reference": "22c0da4fe474b2bb7c0bdfc934c3c5b2edf19bf3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/8c0a329b72b11d938e1cb7e4cabf700139206723",
+                "reference": "8c0a329b72b11d938e1cb7e4cabf700139206723",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -418,7 +418,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-24T20:05:22+00:00"
+            "time": "2020-03-24T20:03:06+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
