@@ -8,6 +8,13 @@ return [
             'password' => 'allen123hjmHJM',
             'charset' => 'utf8',
         ],
+        'wdb' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=192.168.2.240;port=5306;dbname=w_center',
+            'username' => 'root',
+            'password' => 'allen123hjmHJM',
+            'charset' => 'utf8',
+        ],
         'mongodb' => [
             'class' => '\yii\mongodb\Connection',
             'dsn' => 'mongodb://192.168.2.240:11707/mydatabase',

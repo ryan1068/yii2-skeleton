@@ -47,10 +47,10 @@ class SignupCest
             'SignupForm[password]' => 'tester_password',
         ]);
 
-        $I->seeRecord('common\models\User1', [
+        $I->seeRecord('common\models\User', [
             'username' => 'tester',
             'email' => 'tester.email@example.com',
-            'status' => \common\models\User1::STATUS_INACTIVE
+            'status' => \common\models\User::STATUS_INACTIVE
         ]);
 
         $I->seeEmailIsSent();

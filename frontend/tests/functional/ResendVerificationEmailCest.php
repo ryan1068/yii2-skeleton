@@ -20,7 +20,7 @@ class ResendVerificationEmailCest
     public function _fixtures()
     {
         return [
-            'User1' => [
+            'User' => [
                 'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'user.php',
             ],
@@ -73,10 +73,10 @@ class ResendVerificationEmailCest
     {
         $I->submitForm($this->formId, $this->formParams('test@mail.com'));
         $I->canSeeEmailIsSent();
-        $I->seeRecord('common\models\User1', [
+        $I->seeRecord('common\models\User', [
             'email' => 'test@mail.com',
             'username' => 'test.test',
-            'status' => \common\models\User1::STATUS_INACTIVE
+            'status' => \common\models\User::STATUS_INACTIVE
         ]);
         $I->see('Check your email for further instructions.');
     }

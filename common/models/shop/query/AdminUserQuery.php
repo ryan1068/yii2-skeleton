@@ -1,13 +1,13 @@
 <?php
 
-namespace common\models\query;
+namespace common\models\shop\query;
 
 /**
- * This is the ActiveQuery class for [[\common\models\User]].
+ * This is the ActiveQuery class for [[\common\models\shop\AdminUser]].
  *
- * @see \common\models\User
+ * @see \common\models\shop\AdminUser
  */
-class UserQuery extends \yii\db\ActiveQuery
+class AdminUserQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class UserQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \common\models\User[]|array
+     * @return \common\models\shop\AdminUser[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class UserQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \common\models\User|array|null
+     * @return \common\models\shop\AdminUser|array|null
      */
     public function one($db = null)
     {

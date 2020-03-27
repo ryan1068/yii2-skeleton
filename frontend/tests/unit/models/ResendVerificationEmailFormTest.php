@@ -18,7 +18,7 @@ class ResendVerificationEmailFormTest extends Unit
     public function _before()
     {
         $this->tester->haveFixtures([
-            'User1' => [
+            'User' => [
                 'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'user.php'
             ]

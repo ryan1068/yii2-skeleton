@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-backend',
+    'id' => 'gq-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -17,7 +17,7 @@ return [
             'as format' => 'backend\behaviors\ResponseFormatBehavior',
         ],
         'user' => [
-            'identityClass' => 'backend\models\User',
+            'identityClass' => 'backend\models\AdminUser',
             'enableAutoLogin' => false,
             'enableSession' => false,
         ],

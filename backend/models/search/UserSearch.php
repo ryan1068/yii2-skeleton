@@ -3,11 +3,10 @@
 namespace backend\models\search;
 
 
-use backend\resources\Articles;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
-class ArticlesSearch extends Model
+class UserSearch extends Model
 {
     public $title;
     public $userId;

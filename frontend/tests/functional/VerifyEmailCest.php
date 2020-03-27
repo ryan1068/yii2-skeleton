@@ -17,7 +17,7 @@ class VerifyEmailCest
     public function _fixtures()
     {
         return [
-            'User1' => [
+            'User' => [
                 'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'user.php',
             ],
@@ -59,10 +59,10 @@ class VerifyEmailCest
         $I->canSee('Congratulations!', 'h1');
         $I->see('Logout (test.test)', 'form button[type=submit]');
 
-        $I->seeRecord('common\models\User1', [
+        $I->seeRecord('common\models\User', [
            'username' => 'test.test',
            'email' => 'test@mail.com',
-           'status' => \common\models\User1::STATUS_ACTIVE
+           'status' => \common\models\User::STATUS_ACTIVE
         ]);
     }
 }
